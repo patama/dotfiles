@@ -1,0 +1,20 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = patama
+	email = patrick.amarelis@gmail.com
+[alias]
+        st = status
+        co = checkout
+        br = branch
+        up = rebase
+        ci = commit
+[core]
+        editor = vi
+[push]
+	default = simple
+[branch]
+	autosetuprebase = always
